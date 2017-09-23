@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <meta name="google-site-verification" content="zMwQJxNdc4_Ed6XNGbXgD79uR9pm1VxtI_nd3cS4DYA" />
 
-    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+    <title>{{ SITENAME }}</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -48,20 +48,10 @@
           <ul class="nav navbar-nav navbar-right">
             {% if request.user.is_authenticated %}
             <li class="dropdown btn btn-default">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;{{ request.user.worker_set.all.0 }}</a>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user"></i>&nbsp;&nbsp;</a>
                 <ul class="dropdown-menu dropdown-user">
-                    <li><a href="{% url 'project-list' %}"><i class="fa fa-line-chart"></i>&nbsp;&nbsp;View Projects</a></li>
-                    <li><a href="{% url 'project-create' %}"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add Project</a></li>
-                    {% if user.project_set.all %}
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Your projects</li>
-                    {% for project in user.project_set.all %}
-                    <li><a href="{{project.get_absolute_url}}">{% if project.color %}<i class="pj-box" style="border-left:15px solid {{project.color}}"></i>{% endif %}&nbsp;&nbsp;{{project}}</a></li>
-                    {% endfor %}
-                    {% endif %}
-                    <li class="divider"></li>
-                    <li><a href="{% url 'profile-detail' %}"><i class="fa fa-user fa-fw"></i> Your Profile</a></li>
-                    <li><a href="{% url 'account_reset_password' %}"><i class="fa fa-exchange fa-fw"></i> Change Password</a></li>
+                    <li><a href=""><i class="fa fa-line-chart"></i>&nbsp;&nbsp;View Projects</a></li>
+                    <li><a href=""><i class="fa fa-plus"></i>&nbsp;&nbsp;Add Project</a></li>
                     <li class="divider"></li>
                     <li><form id="logout" action="{% url 'account_logout' %}" method="post">{% csrf_token %}</form><a href="#" onclick="javscript:$('#logout').submit()"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
                 </ul>
