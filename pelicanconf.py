@@ -24,7 +24,8 @@ STATIC_PATHS = ['images', 'extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 # Blogroll
-LINKS = (('Code for Boston', 'http://codeforboston.org/'),
+LINKS = (("Join us on Slack!", "bit.do/civicslack"),
+         ('Code for Boston', 'http://codeforboston.org/'),
          ('Code for America', 'http://codeforamerica.org/'),)
 
 # Social widget
