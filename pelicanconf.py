@@ -11,6 +11,7 @@ PATH = 'content'
 TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
+THEME = 'themes/semantic-ui'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -20,14 +21,12 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('Code for Boston', 'http://codeforboston.org/'),
+         ('Code for America', 'http://codeforamerica.org/'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('code4maine @Github', 'https://github.com/code4maine'),
+          ('Twitter', 'https://twitter.com/code4maine'),)
 
 DEFAULT_PAGINATION = 10
 
