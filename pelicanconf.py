@@ -5,13 +5,14 @@ from __future__ import unicode_literals
 AUTHOR = 'Code for Maine administrator'
 SITENAME = 'Code for Maine'
 SITEURL = ''
+SITESUBTITLE = 'Come hack for civic good'
 
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
-THEME = 'themes/semantic-ui'
+THEME = 'themes/codefor'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
